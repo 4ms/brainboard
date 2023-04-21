@@ -1,5 +1,4 @@
 #pragma once
-#include "drivers/codec_PCM3060_registers.hh"
 #include "drivers/i2c_config_struct.hh"
 #include "drivers/sai_config_struct.hh"
 #include <cstdint>
