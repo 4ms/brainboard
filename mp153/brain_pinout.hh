@@ -46,7 +46,7 @@ constexpr inline PinDef D2{GPIO::B, PinNum::_7};
 constexpr inline PinDef D3{GPIO::B, PinNum::_4};
 constexpr inline PinDef D4{GPIO::D, PinNum::_2};
 // constexpr inline PinDef D5{GPIO::B, PinNum::_12}; // p3
-constexpr inline PinDef D5{GPIO::A, PinNum::_11}; // p4
+constexpr inline PinDef D5{GPIO::A, PinNum::_11}; // p4 and later
 constexpr inline PinDef D6{GPIO::B, PinNum::_10};
 constexpr inline PinDef D7{GPIO::C, PinNum::_2};
 constexpr inline PinDef D8{GPIO::C, PinNum::_1};
