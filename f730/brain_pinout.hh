@@ -25,17 +25,16 @@ constexpr inline PinDef A7{GPIO::A, PinNum::_1};
 constexpr inline PinDef A8{GPIO::C, PinNum::_1};
 constexpr inline PinDef A9{GPIO::A, PinNum::_3};
 
-// TODO!
-constexpr inline AdcChanNum A0AdcChan{AdcChanNum::_4};
-constexpr inline AdcChanNum A1AdcChan{AdcChanNum::_5};
-constexpr inline AdcChanNum A2AdcChan{AdcChanNum::_12};
-constexpr inline AdcChanNum A3AdcChan{AdcChanNum::_13};
-constexpr inline AdcChanNum A4AdcChan{AdcChanNum::_0};
-constexpr inline AdcChanNum A5AdcChan{AdcChanNum::_1};
-constexpr inline AdcChanNum A6AdcChan{AdcChanNum::_14};
-constexpr inline AdcChanNum A7AdcChan{AdcChanNum::_10};
+constexpr inline AdcChanNum A0AdcChan{AdcChanNum::_5};
+constexpr inline AdcChanNum A1AdcChan{AdcChanNum::_2};
+constexpr inline AdcChanNum A2AdcChan{AdcChanNum::_6};
+constexpr inline AdcChanNum A3AdcChan{AdcChanNum::_10};
+constexpr inline AdcChanNum A4AdcChan{AdcChanNum::_8};
+constexpr inline AdcChanNum A5AdcChan{AdcChanNum::_7};
+constexpr inline AdcChanNum A6AdcChan{AdcChanNum::_4};
+constexpr inline AdcChanNum A7AdcChan{AdcChanNum::_1};
 constexpr inline AdcChanNum A8AdcChan{AdcChanNum::_11};
-constexpr inline AdcChanNum A9AdcChan{AdcChanNum::_6};
+constexpr inline AdcChanNum A9AdcChan{AdcChanNum::_3};
 
 constexpr inline PinDef D0{GPIO::A, PinNum::_15};
 constexpr inline PinDef D1{GPIO::I, PinNum::_7};
