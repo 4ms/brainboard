@@ -143,8 +143,8 @@ constexpr inline mdrivlib::TimChanConf D17PwmConf{
 // D15-D19?
 
 // TODO: Debug0 and Debug1 are not on the schematic.. are there dummy pins or something along those lines?
-constexpr inline PinDef Debug0{GPIO::H, PinNum::_13};
-constexpr inline PinDef Debug1{GPIO::H, PinNum::_14};
+constexpr inline PinDef Debug0{GPIO::A, PinNum::_12};
+constexpr inline PinDef Debug1{GPIO::I, PinNum::_2};
 
 constexpr inline PinDef Debug2{GPIO::A, PinNum::_12};
 constexpr inline PinDef Debug3{GPIO::I, PinNum::_2};
