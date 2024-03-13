@@ -13,9 +13,9 @@ using mdrivlib::PinNum;
 using mdrivlib::SaiConfig;
 
 const I2CConfig codec_i2c_conf = {
-	.I2Cx = I2C1,
-	.SCL = {GPIO::B, PinNum::_8, PinAF::AltFunc4},
-	.SDA = {GPIO::B, PinNum::_9, PinAF::AltFunc4},
+	.I2Cx = I2C2,
+	.SCL = {GPIO::B, PinNum::_10, PinAF::AltFunc4},
+	.SDA = {GPIO::B, PinNum::_11, PinAF::AltFunc4},
 	.timing =
 		{
 			.PRESC = 0x20,
@@ -29,9 +29,9 @@ const I2CConfig codec_i2c_conf = {
 
 template<uint32_t SampleRate = 48000, uint32_t SampleBits = 24>
 const SaiConfig sai_conf = {
-	.sai = SAI1,
-	.tx_block = SAI1_Block_A,
-	.rx_block = SAI1_Block_B,
+	.sai = SAI2,
+	.tx_block = SAI2_Block_A,
+	.rx_block = SAI2_Block_B,
 	.mode = SaiConfig::TXMaster,
 	.dma_init_tx =
 		{
@@ -58,12 +58,12 @@ const SaiConfig sai_conf = {
 	.framesize = 32,
 	.samplerate = SampleRate,
 
-	.MCLK = {GPIO::E, PinNum::_2, PinAF::AltFunc6},
-	.SCLK = {GPIO::E, PinNum::_5, PinAF::AltFunc6},
-	.LRCLK = {GPIO::E, PinNum::_4, PinAF::AltFunc6},
-	.SD_DAC = {GPIO::E, PinNum::_6, PinAF::AltFunc6},
-	.SD_ADC = {GPIO::E, PinNum::_3, PinAF::AltFunc6},
-	.reset_pin = {GPIO::C, PinNum::_12},
+	.MCLK = {GPIO::E, PinNum::_14, PinAF::AltFunc10},
+	.SCLK = {GPIO::E, PinNum::_12, PinAF::AltFunc10},
+	.LRCLK = {GPIO::E, PinNum::_13, PinAF::AltFunc10},
+	.SD_DAC = {GPIO::D, PinNum::_11, PinAF::AltFunc10},
+	.SD_ADC = {GPIO::E, PinNum::_11, PinAF::AltFunc10},
+	.reset_pin = {GPIO::F, PinNum::_11},
 
 	.bus_address = 0,
 
