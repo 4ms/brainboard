@@ -122,6 +122,12 @@ constexpr inline mdrivlib::TimChanConf D14PwmConf{
 	.channum = TimChannelNum::_1,
 };
 
+constexpr inline mdrivlib::TimChanConf D17PwmConf{
+	.pin = {D17.gpio, D17.pin, PinAF::AltFunc2},
+	.TIM = TIM3_BASE,
+	.channum = TimChannelNum::_4,
+};
+
 constexpr inline PinDef Debug0{GPIO::B, PinNum::_15};
 constexpr inline PinDef Debug1{GPIO::B, PinNum::_14};
 constexpr inline PinDef Debug2{GPIO::B, PinNum::_15};
